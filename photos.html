@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Профессиональное резюме</title>
+    <link rel="stylesheet" href="css/param.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Галерея моих фотографий</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="resume.html">Резюме</a></li>
+                <li><a href="hobbies.html">Хобби</a></li>
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="obrat.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="photo-gallery">
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="images/photo1.jpg" alt="Фотография 1">
+                </div>
+                <div class="slides fade">
+                    <img src="images/photo2.jpg" alt="Фотография 2">
+                </div>
+                <div class="slides fade">
+                    <img src="images/photo3.jpg" alt="Фотография 3">
+                </div>
+                <div class="slides fade">
+                    <img src="images/photo4.jpg" alt="Фотография 4">
+                </div>
+
+                <!-- Кнопки навигации -->
+                <a class="prev" onclick="changeSlide(-1)">❮</a>
+                <a class="next" onclick="changeSlide(1)">❯</a>
+            </div>
+
+            <!-- Индикаторы -->
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contact-info">
+            <span>Email: <a href="mailto:your.email@example.com">Kakoito.email@mail.ru</a></span>
+            <span>Телефон: +7 (800) 5553535</span>
+            <span>Адрес: г. Город, улица Примерная, дом 1</span>
+        </div>
+    </footer>
+
+    <script src="photos.js"></script>
+</body>
+
+</html>
