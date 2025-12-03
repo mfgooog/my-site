@@ -291,31 +291,24 @@ nav a {
 /* Добавьте это в конец вашего CSS файла */
 
 /* Анимация пульсирующего круга */
-.pulsing-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #4CAF50;
-    margin: 2rem auto;
-    animation: pulse 2s infinite ease-in-out;
+.cont_shap{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name: change-shape;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 0.7;
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 1;
-        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.7;
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
-    }
+@keyframes change-shape {
+  0% {
+    border-radius: 0%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100%{
+    border-radius: 0%;
+  }
 }
 
 /* Адаптация для мобильных устройств */
@@ -417,3 +410,4 @@ nav a {
         font-size: 1.3rem;
     }
 }
+
